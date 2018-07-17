@@ -1,0 +1,106 @@
+@link: '../img/';
+@color_normal: #75042E;
+@color_light: #BA3365;
+@color_dark: #4C011D;
+
+
+
+@font-face {
+    font-family: 'Bold';
+    src:  url('../fonts/SFUIText-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Semibold';
+    src:  url('../fonts/SFUIText-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'Light';
+    src:  url('../fonts/SFUIText-Light.otf');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src:  url('../fonts/SFUIText-RegularItalic.otf');
+}
+
+.descriptor_registartion {
+  background-image: url("../img/descriptor_registration.png");
+}
+
+/*Начало стилей для блока как мы регистрируем*/
+.how_registrate {
+  padding: 50px 0px;
+  background-color: #f5f5f5;
+}
+
+.how_registrate__header {
+  color: @color_dark;
+  font-size: 24px;
+  font-family: Semibold;
+  margin-top: 15px;
+  line-height: 1.2;
+}
+
+.how_registrate__text {
+  color: @color_light;
+  font-size: 14px;
+  font-family: Light;
+  margin-top: 15px;
+}
+/*Конец стилей для блока как мы регистрируем*/
+
+.how_work {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.mixin(@img){
+  height: 275px;
+  background-image: url("@{link}@{img}");
+  background-position: center;
+  background-size: cover;
+  padding: 0px 0px;
+  &:hover > .red_back {
+    background-color: rgba(117,4,46,0.3);
+  }
+}
+
+.red_back{
+  background-color: rgba(117,4,46,0);
+  padding: 0px 0px;
+}
+
+.how_work__service{
+  margin-top: 30px;
+  a {
+    color: white;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.how_work__service1 {
+  .mixin('reg21.png');
+}
+
+.how_work__service2 {
+  .mixin('reg22.png');
+}
+
+.how_work__service3 {
+  .mixin('reg23.png');
+}
+
+.how_work__service4 {
+  .mixin('reg24.png');
+}
+
+.how_work__text {
+  color: white;
+  font-family: Semibold;
+  font-size: 30px;
+  letter-spacing: 2px;
+}

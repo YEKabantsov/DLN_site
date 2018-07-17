@@ -1,0 +1,231 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    {% include 'scripts.html' %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <section class="index_descriptor">
+        <div class="container">
+            <div class="row">
+                <div class="col-8">
+                    <h1 class="col-12 index_descriptor__header-white pl-0">Более <span class="index_descriptor__header-bold">20 лет</span> в сфере регистрации и сертификации</h1>
+                    <div class="col-12 list-advantages pl-0">
+                        <p class="col-12"><span class="arrow"> > </span> Lorem ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor</p>
+                        <p class="col-12"><span class="arrow"> > </span> Lorem ipsum sit amet dolor</p>
+                        <p class="col-12"><span class="arrow"> > </span> Lorem ipsum sit amet dolor</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="callback">
+                        <p class="col-12 text-center callback__header">Получить консультацию <br> специалиста бесплатно</p>
+                        <input type="text" class="form-control mb-3 callback__input" placeholder="Ваше имя">
+                        <input type="text" class="form-control mb-3 callback__input" placeholder="Номер телефона*">
+                        <button class="btn w-100 callback__button mb-3">Жду звонка <span> > </span></button>
+                        <p class="col-12 text-center callback__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <p class="col-12 text-center header">Наши услуги</p>
+                <div class="col-12 col-sm-6 content__services">
+                    <div class="white_block col-12 row px-0">
+                        <div class="col-4 px-0 d-flex align-items-center justify-content-center">
+                            <img src="{% static 'img/list.png' %}" alt="">
+                        </div>
+                        <div class="col-8 px-0">
+                            <p class="col-12 white_block__header">Регистрация</p>
+                            <p class="col-12 white_block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                        </div>
+                    </div>
+                    <div class="grey_block col-12 row px-0">
+                        <div class="grey_block__services">
+                            <a href="#">Лекарственные средства</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Медицинские изделия РФ</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Медицинские изделия ЕАЭС</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">БАД</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Косметически средства</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Внесение изменений</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 content__services">
+                    <div class="white_block col-12 row px-0">
+                        <div class="col-4 px-0 d-flex align-items-center justify-content-center">
+                            <img src="{% static 'img/services2.png' %}" alt="">
+                        </div>
+                        <div class="col-8 px-0">
+                            <p class="col-12 white_block__header">Сертификация</p>
+                            <p class="col-12 white_block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                        </div>
+                    </div>
+                    <div class="grey_block col-12 row px-0">
+                        <div class="grey_block__services">
+                            <a href="#">По требованиям ISO</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">По требованиям ЕАЭС</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Декларирование</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Добровольная сертификация</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 content__services">
+                    <div class="white_block col-12 row px-0">
+                        <div class="col-4 px-0 d-flex align-items-center justify-content-center">
+                            <img src="{% static 'img/services3.png' %}" alt="">
+                        </div>
+                        <div class="col-8 px-0">
+                            <p class="col-12 white_block__header">Лицензирование</p>
+                            <p class="col-12 white_block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                        </div>
+                    </div>
+                    <div class="grey_block col-12 row px-0">
+                        <div class="grey_block__services">
+                            <a href="#">Лекарственные средства</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Медицинские изделия</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">БАД</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Косметически средства</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Внесение изменений</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 content__services">
+                    <div class="white_block col-12 row px-0">
+                        <div class="col-4 px-0 d-flex align-items-center justify-content-center">
+                            <img src="{% static 'img/services4.png ' %}" alt="">
+                        </div>
+                        <div class="col-8 px-0">
+                            <p class="col-12 white_block__header">Не нашли что искали?</p>
+                            <p class="col-12 white_block__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+                        </div>
+                    </div>
+                    <div class="grey_block col-12 row px-0">
+                        <div class="grey_block__services">
+                            <a href="#">E-mail: info@centr-dln.ru</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Тел: +7 (929) 541-76-00 </a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Заказать звонок <span> > </span></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <div class="row">
+                <p class="col-12 text-center header">Наши преимущества</p>
+                <div class="col-12 col-sm-4">
+                    <div class="col-12 text-center">
+                        <img src="{% static 'img/hands.svg' %}" alt="" class="text-center advantages__image">
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="{% static 'img/circles.svg' %}" alt="" class="text-center advantages__image-circles">
+                    </div>
+                    <p class="col-12 advantages__header text-center">Гарантия</p>
+                    <p class="col-12 advantages__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="col-12 text-center">
+                        <img src="{% static 'img/clock.svg' %}" alt="" class="text-center advantages__image">
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="{% static 'img/circles.svg' %}" alt="" class="text-center advantages__image-circles">
+                    </div>
+                    <p class="col-12 advantages__header text-center">Скорость</p>
+                    <p class="col-12 advantages__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <div class="col-12 text-center">
+                        <img src="{% static 'img/quality.svg' %}" alt="" class="text-center advantages__image">
+                    </div>
+                    <div class="col-12 text-center">
+                        <img src="{% static 'img/circles.svg' %}" alt="" class="text-center advantages__image-circles">
+                    </div>
+                    <p class="col-12 advantages__header text-center">Качество</p>
+                    <p class="col-12 advantages__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{#    <section class="callback-form">#}
+{#        <div class="container">#}
+{#            <div class="row">#}
+{#                <p class="col-12 callback-form__header mb-4">Хотите получить консультацию или просто появились вопросы?</p>#}
+{#                <p class="col-12 callback-form__text mb-4">Заполните форму и мы с Вами свяжемся.</p>#}
+{#                <div class="col-12 row">#}
+{#                    <div class="col-12 col-sm-4">#}
+{#                        <input type="text" class="w-100 form-control callback__input" placeholder="Ваше имя">#}
+{#                    </div>#}
+{#                    <div class="col-12 col-sm-4">#}
+{#                        <input type="text" class="w-100 form-control callback__input" placeholder="Номер телефона*">#}
+{#                    </div>#}
+{#                    <div class="col-12 col-sm-4">#}
+{#                        <button class="btn form-control w-100 col-12 callback__button">Жду звонка <span> > </span></button>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#        </div>#}
+{#    </section>#}
+    {% include 'form.html' %}
+
+    {% include 'map.html' %}
+    {% include 'footer.html' %}
+
+{#    <footer class="footer">#}
+{#        <div class="container">#}
+{#            <div class="row d-flex align-items-center justify-content-center">#}
+{#                <p class="col-12 col-sm-4 mb-0">© 2018 ООО ДЛН</p>#}
+{#                <p class="col-12 col-sm-4 mb-0">Тел: <span class="red_text">+7 (926) 094-75-77</span><br>E-mail: <span class="red_text">info@centr-dln.ru</span></p>#}
+{#                <p class="col-12 col-sm-4 mb-0 text-right white_text"> г. Москва, Ярославское шоссе, д. 146, <br>корпус 2, 16 этаж, офис 1627</p>#}
+{#            </div>#}
+{#        </div>#}
+{#    </footer>#}
+</body>
+</html>

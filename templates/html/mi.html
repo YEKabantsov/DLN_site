@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    {% include 'scripts.html' %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <section class="descriptor descriptor_mi">
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 pl-0">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Регистрация</a></li>
+                        <li class="breadcrumb-item"><a href="#">Медицинские изделия</a></li>
+                    </ol>
+                </nav>
+                <h1 class="col-12 descriptor__header-white pl-0">Медицинские изделия</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="all_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="col-12 header my-5">Процедура государственной регистрации медицинских изделий осуществляется в 2 этапа:</p>
+                    <p class="col-12 header">1й этап</p>
+                    <img src="{% static 'img/mi1.svg' %}" alt="">
+                    <p class="col-12 header mt-5 mb-5">2й этап</p>
+                    <img src="{% static 'img/mi2.svg' %}" alt="" class="mb-5">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'form.html' %}
+    {% include 'map.html' %}
+    {% include 'footer.html' %}
+</body>
+</html>

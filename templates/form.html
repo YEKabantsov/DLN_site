@@ -1,0 +1,21 @@
+{% load static %}
+<section class="callback-form">
+    <div class="container">
+        <div class="row">
+{#            <p class="col-12 callback-form__header mb-4">Хотите получить консультацию или просто появились вопросы?</p>#}
+            <p class="col-12 callback-form__header mb-4">{{ formtext }}</p>
+            <p class="col-12 callback-form__text mb-4">Заполните форму и мы с Вами свяжемся.</p>
+            <div class="col-12 row">
+                <div class="col-12 col-sm-4">
+                    <input type="text" class="w-100 form-control callback__input" placeholder="Ваше имя">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <input type="text" class="w-100 form-control callback__input" placeholder="Номер телефона*">
+                </div>
+                <div class="col-12 col-sm-4">
+                    <button class="btn form-control w-100 col-12 callback__button">Жду звонка <span> > </span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

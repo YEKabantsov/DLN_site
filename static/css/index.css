@@ -1,0 +1,192 @@
+@font-face {
+    font-family: 'Bold';
+    src:  url('../fonts/SFUIText-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Semibold';
+    src:  url('../fonts/SFUIText-Semibold.otf');
+}
+
+@font-face {
+    font-family: 'Light';
+    src:  url('../fonts/SFUIText-Light.otf');
+}
+
+@font-face {
+    font-family: 'Regular';
+    src:  url('../fonts/SFUIText-RegularItalic.otf');
+}
+
+.index_descriptor {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-image: url("../img/descriptor.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.callback {
+    background-color: #212121;
+    padding: 40px 50px;
+}
+
+.callback__header {
+    color: white;
+    font-family: Semibold;
+    font-size: 16px;
+}
+
+.callback__input {
+    border: 2px solid #BA3365;
+}
+
+.callback__input:hover {
+    border: 2px solid #888;
+}
+
+.callback__button {
+    background-color: #75042E;
+    color: white;
+    border: 2px solid #75042E;
+}
+
+.callback__button:hover {
+    background-color: #BA3365;
+    border: 2px solid #BA3365;
+}
+
+.callback__text {
+    font-family: Light;
+    font-size: 10px;
+    color: #BA577C;
+}
+
+.header {
+    color: #4C011D;
+    font-size: 35px;
+    font-family: Semibold;
+    margin-bottom: 50px;
+}
+
+.content {
+    background: rgb(238, 238, 238);
+    background: -webkit-linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(241, 241, 241) 100%);
+    background: -o-linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(241, 241, 241) 100%);
+    background: -ms-linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(241, 241, 241) 100%);
+    background: linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(241, 241, 241) 100%);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.white_block {
+    background-color: white;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.grey_block {
+    background-color: #f8f7f7;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+}
+
+.white_block__header {
+    font-family: Semibold;
+    font-size: 24px;
+    color: #581830;
+}
+
+.white_block__text {
+    font-family: Light;
+    color: #555555;
+    font-size: 16px;
+}
+
+.advantages__header {
+    color: #4C011D;
+    font-family: Semibold;
+    font-size: 24px;
+}
+
+.advantages__image {
+    width: 100px;
+    height: 100px;
+}
+
+.advantages__image-circles {
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.advantages {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.callback-form {
+    background-color: #212121;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.grey_block__services {
+    padding: 6px 0px;
+    margin: 2px 2px;
+}
+
+.grey_block__services a {
+    padding: 10px 13px;
+    background-color: #ededed;
+    color: #888;
+    font-family: Light;
+    font-size: 13px;
+}
+
+.grey_block__services a:hover {
+    text-decoration: none;
+    background-color: #dadada;
+}
+
+.content__services {
+    margin-bottom: 30px;
+}
+
+.index_descriptor__header-white {
+    color: white;
+    font-family: Light;
+}
+
+.index_descriptor__header-bold {
+    font-family: Bold;
+}
+
+.list-advantages {
+    background-color: rgba(33, 33, 33, 0.5);
+    padding: 25px 30px;
+    margin-top: 60px;
+}
+
+.list-advantages p {
+    color: white;
+    padding-left: 40px;
+}
+
+.arrow {
+    margin-left: -15px;
+}
+
+.callback-form__header {
+    color: white;
+    font-family: Semibold;
+    font-size: 22px;
+}
+
+.callback-form__text{
+    color: white;
+    font-family: Light;
+    font-size: 16px;
+}

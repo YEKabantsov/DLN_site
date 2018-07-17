@@ -1,0 +1,114 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <link rel="stylesheet" href="{% static 'css/reandser.css' %}">
+    {% include 'scripts.html' %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <section class="descriptor descriptor_registartion">
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 pl-0">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Регистрация</a></li>
+                    </ol>
+                </nav>
+                <h1 class="col-12 descriptor__header-white pl-0">Регистрация</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="how_registrate">
+        <div class="container">
+            <div class="row">
+                <p class="col-12 text-center header">Как мы работаем</p>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12 d-flex align-items-center justify-content-center how_registrate__img">
+                        <img src="{% static 'img/reg1.png' %}" alt="">
+                    </div>
+                    <p class="col-12  text-center mb-0 how_registrate__header">Формирование досье</p>
+                    <p class="col-12  text-center mb-0 how_registrate__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12 d-flex align-items-center justify-content-center how_registrate__img">
+                        <img src="{% static 'img/reg2.png' %}" alt="">
+                    </div>
+                    <p class="col-12  text-center mb-0 how_registrate__header">Проведение испытаний</p>
+                    <p class="col-12  text-center mb-0 how_registrate__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12 d-flex align-items-center justify-content-center how_registrate__img">
+                        <img src="{% static 'img/reg3.png' %}" alt="">
+                    </div>
+                    <p class="col-12  text-center mb-0 how_registrate__header">Сопровождение в Росздравнадзоре</p>
+                    <p class="col-12  text-center mb-0 how_registrate__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12 d-flex align-items-center justify-content-center how_registrate__img">
+                        <img src="{% static 'img/reg4.png' %}" alt="">
+                    </div>
+                    <p class="col-12  text-center mb-0 how_registrate__header">Получение <br>РУ</p>
+                    <p class="col-12  text-center mb-0 how_registrate__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="how_work">
+        <div class="container">
+            <div class="row">
+                <p class="col-12 text-center header mb-0 mb-sm-3">Что мы регистрируем</p>
+                <div class="col-12 col-sm-6 how_work__service">
+                    <a href="lekarstvenie-preparaty">
+                        <div class="how_work__service1 w-100">
+                            <div class="red_back w-100 h-100 d-flex align-items-center justify-content-center">
+                                <p class="how_work__text">Лекарственные средства</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 how_work__service">
+                    <a href="medicinskie-izdeliya">
+                        <div class="how_work__service2 w-100">
+                            <div class="red_back w-100 h-100 d-flex align-items-center justify-content-center">
+                                <p class="how_work__text">Медицинские изделия</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 how_work__service">
+                    <a href="bad">
+                        <div class="how_work__service3 w-100">
+                            <div class="red_back w-100 h-100 d-flex align-items-center justify-content-center">
+                                <p class="how_work__text">БАД</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-6 how_work__service">
+                    <a href="#">
+                        <div class="how_work__service4 w-100">
+                            <div class="red_back w-100 h-100 d-flex align-items-center justify-content-center">
+                                <p class="how_work__text">Косметические средства</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'form.html' %}
+    {% include 'map.html' %}
+    {% include 'footer.html' %}
+</body>
+</html>

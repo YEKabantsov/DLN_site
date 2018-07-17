@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    {% include 'scripts.html' %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <section class="descriptor descriptor_lp">
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 pl-0">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Регистрация</a></li>
+                        <li class="breadcrumb-item"><a href="#">Лекарственные препараты</a></li>
+                    </ol>
+                </nav>
+                <h1 class="col-12 descriptor__header-white pl-0">Лекарственные препараты</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="all_content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="col-12 header">Схема регистрации лекарственного препарата</p>
+                    <img src="{% static 'img/lp.svg' %}" alt="">
+                    <p class="col-12 text-left mt-5 mb-1 pl-5"><span class="bold_text">ДКИ</span><span class="italic_text"> - доклинические исследования</span></p>
+                    <p class="col-12 text-left mt-2 mb-1 pl-5"><span class="bold_text">КИ</span><span class="italic_text"> - клинические исследования</span></p>
+                    <p class="col-12 text-left mt-2 mb-1 pl-5"><span class="bold_text">РКИ</span><span class="italic_text"> - разрешение на проведение  клинического исследования</span></p>
+                    <p class="col-12 text-left mt-2 mb-1 pl-5"><span class="bold_text">МЗ РФ</span><span class="italic_text"> - Министерство Здравоохранения РФ</span></p>
+                    <p class="col-12 text-left mt-2 mb-1 pl-5"><span class="bold_text">ФГБУ НЦЭСМП</span><span class="italic_text"> - Научный центр экспертизы средств медицинского применения</span></p>
+                    <p class="col-12 text-left mt-2 mb-1 pl-5"><span class="bold_text">РУ</span><span class="italic_text"> - регистрационное удостоверение</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'form.html' %}
+    {% include 'map.html' %}
+    {% include 'footer.html' %}
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    {% include 'scripts.html' %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <section class="descriptor descriptor_declarate">
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb mb-0 pl-0">
+                        <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                        <li class="breadcrumb-item"><a href="#">Сертификация</a></li>
+                        <li class="breadcrumb-item"><a href="#">Декларирирование</a></li>
+                    </ol>
+                </nav>
+                <h1 class="col-12 descriptor__header-white pl-0">Декларирирование</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-8 pl-2 pl-sm-0">
+                    <p class="col-12 standart_text pl-2 pl-sm-0">Декларация соответствия на медицинские изделия – это документ, который подтверждает, что медицинские изделия соответствуют всем установленным требованиям качества и безопасности, согласно государственным стандартам (ГОСТам).</p>
+                    <p class="col-12 standart_text pl-2 pl-sm-0">Согласно Постановлению Правительства РФ от 01.12.2009 N 982 "Об утверждении единого перечня продукции, подлежащей обязательной сертификации, и единого перечня продукции, подтверждение соответствия которой осуществляется в форме принятия декларации о соответствии", медицинские изделия подлежат обязательному декларированию о соответствии в системе ГОСТ и обязательной сертификации.</p>
+                </div>
+                <div class="col-12 col-sm-4 pr-2 pr-sm-0">
+                    <img src="{% static 'img/declarate1.png' %}" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include 'form.html' %}
+    {% include 'map.html' %}
+    {% include 'footer.html' %}
+</body>
+</html>

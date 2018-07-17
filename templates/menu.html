@@ -1,0 +1,43 @@
+{% load static %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container menu">
+{#    <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>#}
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+      <ul class="d-flex align-items-center nav nav-fill w-100 my_nav">
+          <li class="nav-item">
+              <a class="nav-link nav_img" href="/"><img src="{% static 'img/logo.png' %}" alt=""></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="registraciya">РЕГИСТРАЦИЯ</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="sertificaciya">СЕРТИФИКАЦИЯ</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">КОНТАКТЫ</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">ДОКУМЕНТЫ</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#">+7 (926) 094-75-77</a>
+          </li>
+          <li class="nav-item">
+              <button class="btn menu__btn_red"><a class="nav-link" href="#">Заказать звонок</a></button>
+          </li>
+{#        <li class="nav-item dropdown">#}
+{#          <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>#}
+{#          <div class="dropdown-menu" aria-labelledby="dropdown07">#}
+{#            <a class="dropdown-item" href="#">Action</a>#}
+{#            <a class="dropdown-item" href="#">Another action</a>#}
+{#            <a class="dropdown-item" href="#">Something else here</a>#}
+{#          </div>#}
+{#        </li>#}
+      </ul>
+    </div>
+  </div>
+</nav>
