@@ -18,6 +18,11 @@
     src:  url('../fonts/SFUIText-RegularItalic.otf');
 }
 
+@font-face {
+    font-family: 'Calibri';
+    src:  url('../fonts/Calibri.ttf');
+}
+
 .index_descriptor {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -61,14 +66,6 @@
     font-size: 10px;
     color: #BA577C;
 }
-
-.header {
-    color: #4C011D;
-    font-size: 35px;
-    font-family: Semibold;
-    margin-bottom: 50px;
-}
-
 .content {
     background: rgb(238, 238, 238);
     background: -webkit-linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(241, 241, 241) 100%);
@@ -79,32 +76,7 @@
     padding-bottom: 50px;
 }
 
-.white_block {
-    background-color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
 
-}
-
-.grey_block {
-    background-color: #f8f7f7;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 25px!important;
-    padding-right: 25px!important;
-}
-
-.white_block__header {
-    font-family: Semibold;
-    font-size: 24px;
-    color: #581830;
-}
-
-.white_block__text {
-    font-family: Light;
-    color: #555555;
-    font-size: 16px;
-}
 
 .advantages__header {
     color: #4C011D;
@@ -189,4 +161,49 @@
     color: white;
     font-family: Light;
     font-size: 16px;
+}
+
+/*Новые стили*/
+.dop_link_menu{
+    font-family: Calibri;
+    font-size: 22px;
+    color: #2B2A29;
+    margin-top: 42px;
+}
+
+.dop_link_menu a {
+    color: #2B2A29;
+}
+
+.dop_link_menu a:hover {
+    color: #BD2828;
+    text-decoration: none;
+}
+
+.first_left {
+    margin-right: -37px;
+    margin-top: 62px;
+}
+
+.third_left {
+    margin-top: 53px;
+}
+
+.last_left {
+    margin-right: -37px;
+    margin-top: 40px;
+}
+
+.first_right {
+    margin-left: -37px;
+    margin-top: 62px;
+}
+
+.third_right {
+    margin-top: 53px;
+}
+
+.last_right {
+    margin-left: -37px;
+    margin-top: 40px;
 }

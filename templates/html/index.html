@@ -14,38 +14,43 @@
 </head>
 <body>
     {% include 'menu.html' %}
-    <section class="index_descriptor">
+    <div class="container">
+        <div class="row">
+            <h1 class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Более <span class="bold_text">20 лет</span> в сфере регистрации и сертификации<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></h1>
+        </div>
+    </div>
+    <div class="shadow"></div>
+
+    <section class="">
         <div class="container">
             <div class="row">
-                <div class="col-8">
-                    <h1 class="col-12 index_descriptor__header-white pl-0">Более <span class="index_descriptor__header-bold">20 лет</span> в сфере регистрации и сертификации</h1>
-                    <div class="col-12 list-advantages pl-0">
-                        <p class="col-12"><span class="arrow"> > </span> Lorem ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor ipsum sit amet dolor</p>
-                        <p class="col-12"><span class="arrow"> > </span> Lorem ipsum sit amet dolor</p>
-                        <p class="col-12"><span class="arrow"> > </span> Lorem ipsum sit amet dolor</p>
-                    </div>
+                <div class="col-4 text-right">
+                    <p class="dop_link_menu first_left"><a href="#">Лекарственные средства</a></p>
+                    <p class="dop_link_menu"><a href="#">Медицинские изделия</a></p>
+                    <p class="dop_link_menu third_left"><a href="#">Дезинфицирующие средства</a></p>
+                    <p class="dop_link_menu last_left"><a href="#">Спортивное питание</a></p>
                 </div>
-                <div class="col-4">
-                    <div class="callback">
-                        <p class="col-12 text-center callback__header">Получить консультацию <br> специалиста бесплатно</p>
-                        <input type="text" class="form-control mb-3 callback__input" placeholder="Ваше имя">
-                        <input type="text" class="form-control mb-3 callback__input" placeholder="Номер телефона*">
-                        <button class="btn w-100 callback__button mb-3">Жду звонка <span> > </span></button>
-                        <p class="col-12 text-center callback__text">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</p>
-                    </div>
+                <div class="col-4 d-flex align-items-center justify-content-center">
+                    <img src=" {% static 'img/apple.png' %}" alt="">
+                </div>
+                <div class="col-4 text-left">
+                    <p class="dop_link_menu first_right"><a href="#">Косметические средства</a></p>
+                    <p class="dop_link_menu"><a href="#">Сырьё для производства БАД</a></p>
+                    <p class="dop_link_menu third_right"><a href="#">Биологически активные добавки</a></p>
+                    <p class="dop_link_menu last_right"><a href="#">Пищевые продукты</a></p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="content">
+    <section class="">
         <div class="container">
             <div class="row">
-                <p class="col-12 text-center header">Наши услуги</p>
+                <p class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Наши услуги<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></p>
                 <div class="col-12 col-sm-6 content__services">
                     <div class="white_block col-12 row px-0">
                         <div class="col-4 px-0 d-flex align-items-center justify-content-center">
-                            <img src="{% static 'img/list.png' %}" alt="">
+                            <img src="{% static 'img/circle.svg' %}" alt="">
                         </div>
                         <div class="col-8 px-0">
                             <p class="col-12 white_block__header">Регистрация</p>
@@ -77,7 +82,7 @@
                 <div class="col-12 col-sm-6 content__services">
                     <div class="white_block col-12 row px-0">
                         <div class="col-4 px-0 d-flex align-items-center justify-content-center">
-                            <img src="{% static 'img/services2.png' %}" alt="">
+                            <img src="{% static 'img/circle.svg' %}" alt="">
                         </div>
                         <div class="col-8 px-0">
                             <p class="col-12 white_block__header">Сертификация</p>
@@ -103,7 +108,7 @@
                 <div class="col-12 col-sm-6 content__services">
                     <div class="white_block col-12 row px-0">
                         <div class="col-4 px-0 d-flex align-items-center justify-content-center">
-                            <img src="{% static 'img/services3.png' %}" alt="">
+                            <img src="{% static 'img/circle.svg' %}" alt="">
                         </div>
                         <div class="col-8 px-0">
                             <p class="col-12 white_block__header">Лицензирование</p>
@@ -132,7 +137,7 @@
                 <div class="col-12 col-sm-6 content__services">
                     <div class="white_block col-12 row px-0">
                         <div class="col-4 px-0 d-flex align-items-center justify-content-center">
-                            <img src="{% static 'img/services4.png ' %}" alt="">
+                            <img src="{% static 'img/circle.svg' %}" alt="">
                         </div>
                         <div class="col-8 px-0">
                             <p class="col-12 white_block__header">Не нашли что искали?</p>
@@ -156,76 +161,43 @@
         </div>
     </section>
 
-    <section class="advantages">
+    <section>
         <div class="container">
             <div class="row">
-                <p class="col-12 text-center header">Наши преимущества</p>
-                <div class="col-12 col-sm-4">
-                    <div class="col-12 text-center">
-                        <img src="{% static 'img/hands.svg' %}" alt="" class="text-center advantages__image">
-                    </div>
-                    <div class="col-12 text-center">
-                        <img src="{% static 'img/circles.svg' %}" alt="" class="text-center advantages__image-circles">
-                    </div>
-                    <p class="col-12 advantages__header text-center">Гарантия</p>
-                    <p class="col-12 advantages__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <p class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>О компании<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></p>
+                <div class="col-5">
+                    <img src="{% static 'img/about_us.jpg' %}" alt="">
                 </div>
-                <div class="col-12 col-sm-4">
-                    <div class="col-12 text-center">
-                        <img src="{% static 'img/clock.svg' %}" alt="" class="text-center advantages__image">
-                    </div>
-                    <div class="col-12 text-center">
-                        <img src="{% static 'img/circles.svg' %}" alt="" class="text-center advantages__image-circles">
-                    </div>
-                    <p class="col-12 advantages__header text-center">Скорость</p>
-                    <p class="col-12 advantages__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                </div>
-                <div class="col-12 col-sm-4">
-                    <div class="col-12 text-center">
-                        <img src="{% static 'img/quality.svg' %}" alt="" class="text-center advantages__image">
-                    </div>
-                    <div class="col-12 text-center">
-                        <img src="{% static 'img/circles.svg' %}" alt="" class="text-center advantages__image-circles">
-                    </div>
-                    <p class="col-12 advantages__header text-center">Качество</p>
-                    <p class="col-12 advantages__text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                <div class="col-7">
+                    <p class="text_about">Группа компаний «ДЛН» работает на рынке консалтинга в сфере государственного регулирования средств медицинского применения более 20 лет. Годы успешной работы стали возможны благодаря неустанному и добросовестному труду всего коллектива нашей компании, его способности быстро реагировать на изменения в законодательстве, компетентной работе с партнерами, выстраиванию долгосрочных и надежных отношений с экспертными организациями и испытательными центрами.
+Основной актив «ДЛН» – это наши сотрудники; поэтому мы стремимся создать такие условия работы и корпоративную культуру, которые гарантировали бы им поддержку, обучение и развитие, что в свою очередь обеспечивает максимальную эффективность работы и оказание услуг, отвечающих потребностям и ожиданиям клиентов.
+Наш опыт позволил создать уникальную систему управления проектами, которая позволяет выполнять их в срок и с высоким качеством, исключая простои и ошибки. Сегодня компания «ДЛН» стала уважаемым и успешным брендом, основными чертами которой является надежность, профессионализм и долгосрочные отношения с клиентами и партнерами.
+</p>
                 </div>
             </div>
         </div>
     </section>
 
-{#    <section class="callback-form">#}
-{#        <div class="container">#}
-{#            <div class="row">#}
-{#                <p class="col-12 callback-form__header mb-4">Хотите получить консультацию или просто появились вопросы?</p>#}
-{#                <p class="col-12 callback-form__text mb-4">Заполните форму и мы с Вами свяжемся.</p>#}
-{#                <div class="col-12 row">#}
-{#                    <div class="col-12 col-sm-4">#}
-{#                        <input type="text" class="w-100 form-control callback__input" placeholder="Ваше имя">#}
-{#                    </div>#}
-{#                    <div class="col-12 col-sm-4">#}
-{#                        <input type="text" class="w-100 form-control callback__input" placeholder="Номер телефона*">#}
-{#                    </div>#}
-{#                    <div class="col-12 col-sm-4">#}
-{#                        <button class="btn form-control w-100 col-12 callback__button">Жду звонка <span> > </span></button>#}
-{#                    </div>#}
-{#                </div>#}
-{#            </div>#}
-{#        </div>#}
-{#    </section>#}
-    {% include 'form.html' %}
+    <section id="callback_form">
+        <div class="container">
+            <div class="row">
+                <p class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Напишите нам<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></p>
+                <p class="col-12 text-center small_header">Задайте вопрос или оставьте заявку и наш менеджер свяжется с вами</p>
 
+                <div class="col-5 text-right pr-1">
+                    <input type="text" class="input__form" placeholder="Ваше имя"><br>
+                    <input type="text" class="input__form" placeholder="Номер телефона"><br>
+                    <input type="text" class="input__form" placeholder="Ваш e-mail"><br>
+                    <p class="col-12 text-right pr-1 text_agree">Нажимая на кнопку,<br> Вы даёте <a href="#">согласие на
+                        <br> обработку своих персональных данных</a></p>
+                </div>
+                <div class="col-7 pl-0">
+                    <textarea name="" id="" cols="30" rows="3" placeholder="Текст заявки или вопроса" class="textarea__form"></textarea><br>
+                    <button class="btn btn__form">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </section>
     {% include 'map.html' %}
-    {% include 'footer.html' %}
-
-{#    <footer class="footer">#}
-{#        <div class="container">#}
-{#            <div class="row d-flex align-items-center justify-content-center">#}
-{#                <p class="col-12 col-sm-4 mb-0">© 2018 ООО ДЛН</p>#}
-{#                <p class="col-12 col-sm-4 mb-0">Тел: <span class="red_text">+7 (926) 094-75-77</span><br>E-mail: <span class="red_text">info@centr-dln.ru</span></p>#}
-{#                <p class="col-12 col-sm-4 mb-0 text-right white_text"> г. Москва, Ярославское шоссе, д. 146, <br>корпус 2, 16 этаж, офис 1627</p>#}
-{#            </div>#}
-{#        </div>#}
-{#    </footer>#}
 </body>
 </html>

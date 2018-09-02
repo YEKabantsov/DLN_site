@@ -18,6 +18,11 @@
     src:  url('../fonts/SFUIText-RegularItalic.otf');
 }
 
+@font-face {
+    font-family: 'Calibri';
+    src:  url('../fonts/Calibri.ttf');
+}
+
 .menu {
     padding-left: 0px;
     padding-right: 0px;
@@ -46,13 +51,15 @@
 }
 
 .my_nav li a{
-    font-family: Semibold;
-    font-size: 15px;
-    color: #212121;
+    font-family: Calibri;
+    font-size: 18px;
+    color: #BE1B20;
+    font-weight: 600;
+    line-height: 1;
 }
 
 .my_nav li a:hover {
-    color: #BA3365;
+    color: #D56D71;
 }
 
 .footer {
@@ -164,13 +171,6 @@ footer p {
     color: #BA577C;
 }
 
-.header {
-    color: #4C011D;
-    font-size: 35px;
-    font-family: Semibold;
-    margin-bottom: 50px;
-}
-
 .content {
     background: rgb(238, 238, 238);
     background: -webkit-linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(241, 241, 241) 100%);
@@ -179,33 +179,6 @@ footer p {
     background: linear-gradient(180deg, rgb(238, 238, 238) 0%, rgb(241, 241, 241) 100%);
     padding-top: 50px;
     padding-bottom: 50px;
-}
-
-.white_block {
-    background-color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
-
-}
-
-.grey_block {
-    background-color: #f8f7f7;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-left: 25px!important;
-    padding-right: 25px!important;
-}
-
-.white_block__header {
-    font-family: Semibold;
-    font-size: 24px;
-    color: #581830;
-}
-
-.white_block__text {
-    font-family: Light;
-    color: #555555;
-    font-size: 16px;
 }
 
 .advantages__header {
@@ -311,7 +284,111 @@ footer p {
     color: #888888;
 }
 
+
+/*Новые стили*/
+.header {
+    color: #BE1B20;
+    font-size: 42px;
+    font-family: Calibri;
+    padding: 13px 0px;
+    margin-bottom: 0px;
+}
+
+.shadow {
+    height: 10px;
+    margin-bottom: 50px;
+    width: 100%;
+   -webkit-box-shadow: 0px 10px 26px -7px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 10px 26px -7px rgba(0,0,0,0.55);
+    box-shadow: 0px 10px 26px -7px rgba(0,0,0,0.55);
+}
+
 .bold_text {
-    color: #4C011D;
-    font-family: Bold;
+    font-weight: bold;
+}
+
+.square_top img{
+    margin-top: -32px;
+    margin-right: 32px;
+}
+
+.square_bottom img{
+    margin-bottom: -32px;
+    margin-left: 32px;
+}
+
+.white_block {
+    background-color: #EBECEC;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+}
+
+.grey_block {
+    background-color: #f8f7f7;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px!important;
+    padding-right: 25px!important;
+}
+
+.white_block__header {
+    font-family: Calibri;
+    font-size: 24px;
+    color: #BE1B20;
+}
+
+.white_block__text {
+    font-family: Light;
+    color: #555555;
+    font-size: 16px;
+}
+
+.text_about {
+    font-family: Calibri;
+    font-size: 18px;
+    color: #2B2A29;
+}
+
+.small_header {
+    font-family: Calibri;
+    font-size: 22px;
+    color: #2B2A29;
+}
+
+.input__form {
+    width: 195px;
+    height: 35px;
+    border: 2px solid #BE1B20;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.textarea__form {
+    width: 375px;
+    height: 115px;
+    border: 2px solid #BE1B20;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+.text_agree {
+    font-family: Calibri;
+    font-size: 12px;
+    line-height: 1;
+    text-align: center!important;
+    padding-left: 250px;
+    padding-right: 0px!important;
+}
+
+.btn__form {
+    width: 375px;
+    background-color: #B48383;
+    color: white;
+    font-family: calibri;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 0px;
+    margin-top: -7px;
+    padding: 4px 12px;
 }
