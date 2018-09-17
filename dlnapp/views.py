@@ -34,3 +34,7 @@ def registration(request):
 def sertification(request):
     data = {"description": "Сертификация", "title": "Сертификация", "formtext": "Хотите произвести сертификацию?"}
     return render(request, 'html/sertification.html', context=data)
+
+def ls(request):
+    data = {"description": "Сертификация", "title": "Сертификация"}
+    return render(request, 'html/ls.html', context=data)
