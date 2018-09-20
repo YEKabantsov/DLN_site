@@ -1,0 +1,72 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    {% include 'scripts.html' %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <div class="header_page">
+        <h1 class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Лекарственные средства<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></h1>
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb mb-0">
+                  <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Лекарственные средства</a></li>
+                  </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row content_other_page">
+            <div class="col-12 col-sm-4">
+                <img src="{% static 'img/002.jpg' %}" alt="" class="img-fluid">
+                <p class="red-text mt-3">НАШИ УСЛУГИ</p>
+                <ul class="list_services">
+                    <li>
+                        <a href="#"><img src="{% static 'img/red_arrow.svg' %}" alt="" class="img_services">РЕГИСТРАЦИЯ</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#"><img src="{% static 'img/red_arrow.svg' %}" alt="" class="img_services">ЛИЦЕНЗИРОВАНИЕ</a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-8">
+                <p class="col-12 text-center header_other_page">Регистрация лекарственных средств</p>
+                <p class="col-12 text_other_page">Компания «ДЛН» осуществляет следующие виды регистрации лекарственных средств:</p>
+                <ul>
+                    <li>регистрация оригинальных и воспроизведенных лекарственных средств (ЛС) в России;</li>
+                    <li>регистрация лекарственных средств, произведенных вне территории Российской Федерации;</li>
+                    <li>регистрация изменений в досье (производитель ЛС, держатель РУ, методики контроля качества, вспомогательные вещества);</li>
+
+                </ul>
+                <p class="col-12 text_other_page">Наши специалисты осуществляют личный контроль всех этапов регистрации лекарственных средств:</p>
+                <ul>
+                    <li>подготовку пакета документов для получения разрешения на клинические исследования лекарственного средства;</li>
+                    <li>организацию и мониторинг клинических исследований лекарственного средства в целях регистрации на территории РФ;</li>
+                    <li>организацию и мониторинг доклинических исследований лекарственного средства;</li>
+                    <li>процедуру подтверждения регистрации лекарственного средства;</li>
+                    <li>оформление и подачу периодических отчетов по безопасности лекарственного средства;</li>
+                    <li>подтверждение регистрации лекарственного средства.</li>
+                </ul>
+                <p class="col-12 text_other_page">Для Вашего удобства мы представили в виде схемы основные этапы государственной регистрации лекарственных средств.Получить подробную консультацию по всем вопросам регистрации лекарственных средств Вы можете перейдя по ссылке ниже или позвонив по телефону +7 (495) 541-76-00</p>
+            </div>
+        </div>
+    </div>
+    {% include 'map.html' %}
+</body>
+</html>

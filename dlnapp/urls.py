@@ -9,5 +9,7 @@ urlpatterns = [
     url(r'^bad$', views.bad),
     url(r'^registraciya$', views.registration),
     url(r'^sertificaciya$', views.sertification),
+
+    url(r'^lekarstvenie-sredstva$', views.ls),
     url(r'^$', views.dln),
 ]
