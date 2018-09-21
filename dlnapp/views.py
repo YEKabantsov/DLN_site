@@ -38,3 +38,43 @@ def sertification(request):
 def ls(request):
     data = {"description": "Сертификация", "title": "Сертификация"}
     return render(request, 'html/ls.html', context=data)
+
+def medprod(request):
+    data = {}
+    return render(request, 'html/medical-products.html')
+
+def disprod(request):
+    data = {}
+    return render(request, 'html/disinfecting-products.html')
+
+def sportpit(request):
+    data = {}
+    return render(request, 'html/sport-nutrition.html')
+
+def cosprod(request):
+    data = {}
+    return render(request, 'html/cosmetic-products.html')
+
+def rawforbad(request):
+    data = {}
+    return render(request, 'html/raw-for-bad.html')
+
+def otherbad(request):
+    data = {}
+    return render(request, 'html/other-bad.html')
+
+def foodstuffs(request):
+    data = {}
+    return render(request, 'html/foodstuffs.html')
+
+def regmedecine(request):
+    data = {}
+    return render(request, 'html/register-medecine.html')
+
+def regmedecinerf(request):
+    data = {}
+    return render(request, 'html/register-medecine-RF.html')
+
+def makechanges(request):
+    data = {}
+    return render(request, 'html/make-changes.html')

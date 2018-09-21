@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Calibri';
-    src:  url('../fonts/Calibri.ttf');
+    src: url('../fonts/Calibri.ttf');
 }
 
 .header_page {
@@ -11,15 +11,15 @@
 }
 
 .breadcrumb-item a {
-    color: #BE1B20!important;
+    color: #BE1B20 !important;
     font-family: Calibri;
 }
 
-.breadcrumb-item+.breadcrumb-item::before {
+.breadcrumb-item + .breadcrumb-item::before {
     display: inline-block;
     padding-right: .5rem;
     padding-left: .5rem;
-    color: #BE1B20!important;
+    color: #BE1B20 !important;
     content: "/";
 }
 
@@ -66,4 +66,59 @@
 
 .list_services li a:hover {
     text-decoration: none;
+}
+
+.red-number {
+    color: #be1b20;
+    font-weight: bold;
+}
+
+.list-dash {
+    padding-left: 15px;
+}
+
+.list-dash li {
+    list-style-type: none;
+}
+
+.list-dash li:before {
+    content: "-";
+}
+
+.list-numbers {
+    list-style-type: decimal-leading-zero;
+}
+
+.top-shift {
+    margin-top: 25px;
+}
+
+.red-subtitle {
+    color: #BE1B20;
+}
+
+.step {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.centered-img {
+    margin: 0 auto;
+}
+
+/* Make offer */
+
+.make-offer-ref, .make-offer-ref:hover {
+    color: #be1b20;
+}
+
+.horizontal-line {
+    height: 5px;
+    background-color: #be1b20;
+    width: 50%;
+}
+
+.line-container {
+    display: flex;
+    align-items: center;
 }

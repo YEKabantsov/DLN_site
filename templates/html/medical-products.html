@@ -1,0 +1,102 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    {% include 'scripts.html' %}
+</head>
+<body>
+    {% include 'menu.html' %}
+    <div class="header_page">
+        <h1 class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Медеценские изделия<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></h1>
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb mb-0">
+                  <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Медеценские изделия</a></li>
+                  </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row content_other_page">
+
+
+            <div class="col-12 col-sm-4">
+                <img src="{% static 'img/003.jpg' %}" alt="" class="img-fluid">
+
+                <p class="red-text mt-3">НАШИ УСЛУГИ</p>
+                <ul class="list_services">
+                    <li>
+                        <a href="#"><img src="{% static 'img/red_arrow.svg' %}" alt="" class="img_services">РЕГИСТРАЦИЯ РФ И ЕАЭС</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#"><img src="{% static 'img/red_arrow.svg' %}" alt="" class="img_services">ЛИЦЕНЗИРОВАНИЕ</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#"><img src="{% static 'img/red_arrow.svg' %}" alt="" class="img_services">ДЕКЛАРИРОВАНИЕ И СЕРТИФИКАЦИЯ</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#"><img src="{% static 'img/red_arrow.svg' %}" alt="" class="img_services">СИСТЕМА МЕНДЖМЕНТА И КАЧЕСТВА</a>
+                    </li>
+                    <hr>
+                </ul>
+
+            </div>
+
+
+            <div class="col-12 col-sm-8">
+                <p class="col-12 text_other_page">
+                    <span class="bold_text">Медицинские изделия</span> – это устройства, инструменты, материалы, которые используются для диагностики, профилактики, лечения различных заболеваний, а также для реабилитации пациентов после перенесенных травм или операций.
+                    На территории РФ разрешено обращение только зарегистрированных медицинских изделий.
+                </p>
+                <p class="col-12 text_other_page">
+                    Мы предлагаем комплексное решение задач по регистрации, лицензированию, сертификации и декларированию медицинских изделий. Получить подробную консультацию Вы можете, оформив заявку.
+                </p>
+
+                {% include 'make-offer.html' %}
+
+                <p class="col-12 text_other_page bold_text">Пакет наших услуг включает:</p>
+                <ul class="list-dash">
+                    <li>анализ представленного досье, сбор необходимой нормативной, технической, эксплуатационной документации, ее анализ, определение вида медицинского изделия, класса потенциального риска;</li>
+                    <li>получение разрешения на ввоз образцов;</li>
+                    <li>сопровождение изделий в технических испытаниях, токсикологических исследованиях, клинических испытаниях в аккредитованных лабораториях;</li>
+                    <li>полное сопровождение процедуры государственной регистрации медицинских изделий. Результат всех перечисленных работ – получение регистрационного удостоверения Росздравнадзора.</li>
+                </ul>
+                <p class="col-12 text_other_page">
+                    <span class="bold_text">Обращаем ваше внимание! </span>
+                    Замена регистрационного удостоверения осуществляется без прохождения процедуры государственной регистрации медицинских изделий на основании заявления, представленного заявителем в Федеральную службу по надзору в сфере здравоохранения.
+                </p>
+                <p class="col-12 text_other_page">Мы не требуем от своих клиентов дополнительных действий, связанных с лишними затратами сил и времени. От Вас нам нужны только образцы продукции и минимальный комплект базовых документов. </p>
+                <p class="col-12 text_other_page">
+                    <span class="bold_text">Нормативные документы:</span>
+                    <br>
+                    <a href="#" target="_blank">Постановление Правительства РФ от 27.12.2012 г. №1416 "Об утверждении правил государственной регистрации медицинских изделий</a>
+                </p>
+                <p class="col-12 text_other_page">
+                    <a href="#" target="_blank">
+                        Приказ Минздрава России от 14.10.2013 N 737н
+                        "Об утверждении Административного регламента Федеральной службы по надзору в сфере здравоохранения по предоставлению государственной услуги по государственной регистрации медицинских изделий"
+                        (Зарегистрировано в Минюсте России 20.06.2014 N 32823)
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    {% include 'map.html' %}
+</body>
+</html>
