@@ -1,0 +1,86 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    {% include 'scripts.html' %}
+</head>
+<body>
+{% include 'menu.html' %}
+<div class="header_page">
+    <h1 class="col-12 text-center header">
+        <span class="square_top">
+            <img src="{% static 'img/square_top.svg'%}" alt="">
+        </span>
+        Регистрация медецинских изделий в ЕАЭС
+        <span class="square_bottom">
+            <img src="{% static 'img/square_bottom.svg'%}" alt="">
+        </span>
+    </h1>
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Регистрация</a></li>
+                    <li class="breadcrumb-item"><a href="#">Медецинские изделия в ЕАЭС</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row content_other_page">
+
+
+        <div class="col-12 col-sm-12">
+
+            <p class="col-12 text_other_page">
+                Регулирование обращения медицинских изделий в рамках Евразийского экономического союза осуществляется в
+                соответствии с Договором о Евразийском экономическом союзе от 29 мая 2014 года, Соглашением о единых
+                принципах и правилах обращения медицинских изделий (изделий медицинского назначения и медицинской
+                техники) в рамках Евразийского экономического союза от 23.12.2014, другими международными договорами,
+                составляющими право Союза, решениями Комиссии, а также законодательством государств-членов.
+            </p>
+            <p class="col-12 text_other_page">
+                Регистрация медицинских изделий в рамках Евразийского экономического союза осуществляется в соответствии
+                с Правилами регистрации и экспертизы безопасности, качества и эффективности медицинских изделий,
+                утвержденными Решением Совета Евразийской экономической комиссии от 12.02.2016 № 46.
+            </p>
+            <p class="col-12 text_other_page">
+                После успешного прохождения полного процесса регистрации выдается регистрационное удостоверение. Этот
+                документ бессрочный и действует на всей территории Евразийского экономического союза.
+            </p>
+
+            <p class="col-12 text_other_page">
+                Благодаря накопленному опыту, мы знаем об определенных нюансах, которые могут возникнуть в процессе
+                оформления документации в регистрирующих органах и затормозить весь процесс.
+            </p>
+            <p class="col-12 text_other_page">
+                Мы готовы ответить на все ваши вопросы – звоните: <span class="red-number">+7 (495) 541-76-00</span>.
+                Также вы можете оставить вашу заявку на сайте, чтобы мы могли предварительно подготовить для вас ответ
+                или информацию.
+            </p>
+            <p class="col-12 text_other_page">
+                Сотрудники «ДЛН» готовы ответить на все Ваши вопросы - звоните! <span class="red-number">+7 (495) 541-76-00</span>
+                Также вы можете оставить Вашу заявку на сайте. Специалист компании в ближайшее время перезвонит Вам,
+                чтобы проконсультировать по любому из наших направлений.
+            </p>
+
+            {% include 'make-offer.html' %}
+
+        </div>
+    </div>
+</div>
+{% include 'map.html' %}
+</body>
+</html>

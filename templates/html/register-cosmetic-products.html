@@ -1,0 +1,105 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    {% include 'scripts.html' %}
+</head>
+<body>
+{% include 'menu.html' %}
+<div class="header_page">
+    <h1 class="col-12 text-center header">
+        <span class="square_top">
+            <img src="{% static 'img/square_top.svg'%}" alt="">
+        </span>
+        Регистрация косметических средств
+        <span class="square_bottom">
+            <img src="{% static 'img/square_bottom.svg'%}" alt="">
+        </span>
+    </h1>
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Регистрация</a></li>
+                    <li class="breadcrumb-item"><a href="#">Косметические средства</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row content_other_page">
+
+
+        <div class="col-12 col-sm-12">
+
+            <p class="col-12 text_other_page bold_text">
+                Перечень косметической продукции, подлежащей государственной регистрации:
+            </p>
+            <ul class="list-dash">
+                <li>
+                    Парфюмерно-косметическая продукция для искусственного загара
+                </li>
+                <li>
+                    Парфюмерно-косметическая продукция для отбеливания (осветления) кожи
+                </li>
+                <li>
+                    Косметика для нанесения татуажа
+                </li>
+                <li>
+                    Парфюмерно-косметическая продукция индивидуальной защиты кожи от воздействия вредных
+                    производственных факторов
+                </li>
+                <li>
+                    Детская косметика
+                </li>
+                <li>
+                    Парфюмерно-косметическая продукция для химического окрашивания, осветления и мелирования волос
+                </li>
+                <li>
+                    Парфюмерно-косметическая продукция для химической завивки и распрямления волос
+                </li>
+                <li>
+                    Парфюмерно-косметическая продукция, произведенная с использованием наноматериалов
+                </li>
+                <li>
+                    Парфюмерно-косметическая продукция для депиляции
+                </li>
+                <li>
+                    Пилинги
+                </li>
+                <li>
+                    Фторсодержащие средства гигиены полости рта, массовая доля фторидов в которых превышает 0,15% (для
+                    жидких средств гигиены полости рта – 0,05%)
+                </li>
+                <li>
+                    Средства для отбеливания зубов, содержащие перекись водорода или другие компоненты, выделяющие
+                    перекись водорода, включая перекись карбамида и перекись цинка, с концентрацией перекиси водорода (в
+                    качестве ингредиента или выделяемой) 0,1% — 6,0%.
+                </li>
+            </ul>
+
+            <p class="col-12 text_other_page">
+
+            </p>
+
+
+            {% include 'make-offer.html' %}
+
+        </div>
+    </div>
+</div>
+{% include 'map.html' %}
+</body>
+</html>

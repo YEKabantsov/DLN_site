@@ -78,3 +78,39 @@ def regmedecinerf(request):
 def makechanges(request):
     data = {}
     return render(request, 'html/make-changes.html')
+
+def regmedecineeeu(request):
+    data = {}
+    return render(request, 'html/register-medicine-eeu.html')
+
+def regbad(request):
+    data = {}
+    return render(request, 'html/register-bad.html')
+
+def regcosmeticproducts(request):
+    data = {}
+    return render(request, 'html/register-cosmetic-products.html')
+
+def licenseformedicine(request):
+    data = {}
+    return render(request, 'html/license-for-medicine.html')
+
+def licensemedicaltechnique(request):
+    data = {}
+    return render(request, 'html/license-medical-technique.html')
+
+def certificationiso(request):
+    data = {}
+    return render(request, 'html/certification-iso.html')
+
+def certificationeeu(request):
+    data = {}
+    return render(request, 'html/certification-eeu.html')
+
+def declarateandcertificate(request):
+    data = {}
+    return render(request, 'html/declarate-and-certificate.html')
+
+def documents(request):
+    data = {}
+    return render(request, 'html/documents.html')
