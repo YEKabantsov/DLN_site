@@ -1,10 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<!doctype html>
+<html lang="ru">
 <head>
+    <title>{{ title }}</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    {% include 'scripts.html' %}
 </head>
 <body>
+{% include 'menu.html' %}
+<div class="header_page">
+    <h1 class="col-12 text-center header">
+        <span class="square_top">
+            <img src="{% static 'img/square_top.svg'%}" alt="">
+        </span>
+        Лицензирование лекарственных средств
+        <span class="square_bottom">
+            <img src="{% static 'img/square_bottom.svg'%}" alt="">
+        </span>
+    </h1>
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Лицензирование</a></li>
+                    <li class="breadcrumb-item"><a href="#">Лекарственные средства</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row content_other_page">
+
+
+        <div class="col-12 col-sm-4">
+            <img src="{% static 'img/016.jpg' %}" alt="" class="img-fluid">
+        </div>
+
+
+        <div class="col-12 col-sm-8">
+
+            <p class="col-12 text_other_page">
+                Лицензирование – это сложный этап получения специального разрешения на производство лекарственных
+                средств, которое выдается юридическому лицу или индивидуальному предпринимателю. Порядок получения
+                лицензии определяется Постановлением Правительства «Положение о лицензировании производства
+                лекарственных средств».
+            </p>
+            <p class="col-12 text_other_page">
+                К лицензированию лекарственных средств предъявляется ряд требований, несоответствие которым влечет за
+                собой отказ в выдаче лицензии, а именно:
+            </p>
+            <ul class="list-dash">
+                <li>наличие помещения и оборудования для производства и хранения лекарственных средств;</li>
+                <li>контроль качества лекарственных средств в разрешенных для производства формах;</li>
+                <li>
+                    наличие специалистов, имеющих специальное образование: медицинское, фармацевтическое,
+                    химико-технологическое и др., которое разрешает допуск к производству лекарственных средств;
+                </li>
+                <li>
+                    регулярное повышение квалификации работников, связанных с производством и маркировкой лекарственных
+                    средств;
+                </li>
+                <li>
+                    утилизация отходов производства и лекарственных средств с истекшим сроком годности.
+                </li>
+            </ul>
+            <p class="col-12 text_other_page">
+                В соответствии с пунктом 2 статьи 13 Закона №86-ФЗ производство лекарственных средств осуществляется
+                организациями - производителями лекарственных средств, имеющими лицензии на производство лекарственных
+                средств.
+                Статьей 15 Закона №86-ФЗ регулируется порядок лицензирования производства лекарственных средств.
+            </p>
+            <p class="col-12 text_other_page">
+                Требование о необходимости получения лицензии на производство лекарственных средств также закреплено в
+                пункте 48 статьи 17 Федерального закона от 8 августа 2001 года №128-ФЗ «О лицензировании отдельных видов
+                деятельности» (далее Закон №128-ФЗ).
+            </p>
+            <p class="col-12 text_other_page">
+                Порядок и условия выдачи лицензий на производство лекарственных средств определены Положением о
+                лицензировании производства лекарственных средств, утвержденным Постановлением Правительства Российской
+                Федерации от 6 июля 2006 года №415 «Об утверждении Положения о лицензировании производства лекарственных
+                средств» (далее Положение №415).
+            </p>
+            <p class="col-12 text_other_page">
+                Команда наших специалистов поможет Вам минимизировать риск отказа. Для подробной консультации по
+                лицензированию лекарственных средств воспользуйтесь формой, перейдя по ссылке ниже.
+            </p>
+
+            {% include 'make-offer.html' %}
+
+            <ul class="list-dash">
+                <li>
+                    <a href="{% static 'files/federalnyy_zakon_ot_8_avgusta_2001_goda.doc' %}">Федеральный закон от 8 августа 2001 г.</a>
+                </li>
+                <li>
+                    <a href="{% static 'files/ot_4_iyulya_2002_g._500.doc' %}">Положение правительства Москвы от 4 июля 2002 г.</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% include 'map.html' %}
 </body>
 </html>

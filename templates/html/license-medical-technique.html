@@ -1,10 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<!doctype html>
+<html lang="ru">
 <head>
+    <title>{{ title }}</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    {% include 'scripts.html' %}
 </head>
 <body>
+{% include 'menu.html' %}
+<div class="header_page">
+    <h1 class="col-12 text-center header">
+        <span class="square_top">
+            <img src="{% static 'img/square_top.svg'%}" alt="">
+        </span>
+        Лицензирование медицинской техникии
+        <span class="square_bottom">
+            <img src="{% static 'img/square_bottom.svg'%}" alt="">
+        </span>
+    </h1>
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Лицензирование</a></li>
+                    <li class="breadcrumb-item"><a href="#">Медицинская техника</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row content_other_page">
+
+
+        <div class="col-12 col-sm-4">
+            <img src="{% static 'img/017.jpg' %}" alt="" class="img-fluid">
+        </div>
+
+
+        <div class="col-12 col-sm-8">
+
+            <p class="col-12 text_other_page">
+                Организация, осуществляющая производство медицинской техники либо ее обслуживание, должна иметь лицензию
+                на проведение своей деятельности. Использование и эксплуатация медицинского оборудования возможны только
+                после получения лицензии Росздравнадзора.
+            </p>
+            <p class="col-12 text_other_page">
+                Государственная лицензия выдается по регламенту Федеральной службой по надзору в сфере здравоохранения в
+                соответствии с нормативными документами.
+            </p>
+            <p class="col-12 text_other_page bold_text">
+                Для лицензирования производства медицинской техники необходимо подготовить ряд основных документов, а
+                именно:
+            </p>
+            <ul class="list-dash">
+                <li>учредительная и регистрационная документация;</li>
+                <li>нормативно-техническая и эксплуатационная документация;</li>
+                <li>документация, отражающая производственные условия;</li>
+                <li>документация, подтверждающая квалификацию штатных работников;</li>
+                <li>документация с дополнительными сведениями.</li>
+            </ul>
+            <p class="col-12 text_other_page">
+                Компания «ДЛН» оказывает весь спектр услуг по оформлению лицензии на медицинскую технику – от подготовки
+                полного пакета документов до взаимодействия с соответствующими государственными органами в сфере
+                здравоохранения и социального развития.
+            </p>
+
+            {% include 'make-offer.html' %}
+
+            <p class="col-12 text_other_page">
+                Благодаря накопленному опыту, мы знаем об определенных нюансах, которые могут возникнуть в процессе
+                оформления документации в регистрирующих органах и затормозить весь процесс.
+            </p>
+            <p class="col-12 text_other_page">
+                Сотрудники «ДЛН» готовы ответить на все Ваши вопросы - звоните! <span class="red-number">+7 (495) 541-76-00</span>
+                Также вы можете оставить Вашу заявку на сайте. Специалист компании в ближайшее время перезвонит Вам,
+                чтобы проконсультировать по любому из наших направлений.
+            </p>
+        </div>
+    </div>
+</div>
+{% include 'map.html' %}
 </body>
 </html>

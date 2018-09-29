@@ -1,10 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
+{% load static %}
+<!doctype html>
+<html lang="ru">
 <head>
+    <title>{{ title }}</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    {% include 'scripts.html' %}
 </head>
 <body>
+{% include 'menu.html' %}
+<div class="header_page">
+    <h1 class="col-12 text-center header">
+        <span class="square_top">
+            <img src="{% static 'img/square_top.svg'%}" alt="">
+        </span>
+        Документы
+        <span class="square_bottom">
+            <img src="{% static 'img/square_bottom.svg'%}" alt="">
+        </span>
+    </h1>
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Документы</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
 
+<div class="container">
+    <div class="row content_other_page">
+
+
+        <div class="col-12 col-sm-4">
+            <img src="{% static 'img/021.jpg' %}" alt="" class="img-fluid">
+        </div>
+
+
+        <div class="col-12 col-sm-8">
+
+            <p class="col-12 text_other_page">
+
+            </p>
+
+        </div>
+    </div>
+</div>
+{% include 'map.html' %}
 </body>
 </html>

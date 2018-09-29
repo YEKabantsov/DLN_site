@@ -73,6 +73,10 @@
     font-weight: bold;
 }
 
+.list-none {
+    list-style-type: none;
+}
+
 .list-dash {
     padding-left: 15px;
 }
@@ -121,4 +125,21 @@
 .line-container {
     display: flex;
     align-items: center;
+}
+
+.resize-img {
+    width: 100%;
+}
+
+
+.img-container {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.smk-table {
+    width: 100%;
+    text-align: center;
 }
