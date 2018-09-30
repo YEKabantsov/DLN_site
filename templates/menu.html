@@ -1,7 +1,6 @@
 {% load static %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container menu">
-{#    <a class="navbar-brand" href="#"><img src="{% static 'img/logo.png' %}" alt=""></a>#}
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,20 +10,35 @@
           <li class="nav-item">
               <a class="nav-link nav_img" href="/"><img src="{% static 'img/logo.jpg' %}" alt=""></a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="registraciya">РЕГИСТРАЦИЯ</a>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown_reg" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">РЕГИСТРАЦИЯ</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown_reg">
+                  <a class="dropdown-item" href="lekarstvenie-sredstva">Лекарственные средства</a>
+                  <a class="dropdown-item" href="registratsiya-lekarstvennykh-sredstv-rf">Медицинские изделия РФ</a>
+                  <a class="dropdown-item" href="vnesenie-izmeneniy">Внесение изменений</a>
+                  <a class="dropdown-item" href="bad">БАД</a>
+                  <a class="dropdown-item" href="cosmeticheskie-sredstva">Косметические средства</a>
+              </div>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown_lic" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ЛИЦЕНЗИРОВАНИЕ</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown_lic">
+                  <a class="dropdown-item" href="litsenzirovanie-medicinskoi-tehniki">Медицинская техника</a>
+                  <a class="dropdown-item" href="litsenzirovanie-lekarstvennykh-sredstv">Лекарственные средства</a>
+              </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="sertificaciya">ЛИЦЕНЗИРОВАНИЕ</a>
+              <a class="nav-link" href="deklarirovanie-and-sertifikatsiya">ДЕКЛАРИРОВАНИЕ <br>и СЕРТИФИКАЦИЯ</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown_smk" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">СМК</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown_smk">
+                  <a class="dropdown-item" href="sertifikatsiya-eeu">Медицинская техника</a>
+                  <a class="dropdown-item" href="sertifikatsiya-iso">Лекарственные средства</a>
+              </div>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">ДЕКЛАРИРОВАНИЕ <br>и СЕРТИФИКАЦИЯ</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">СМК</a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#">ДОКУМЕНТЫ</a>
+              <a class="nav-link" href="dokumenti">ДОКУМЕНТЫ</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="#">КОНТАКТЫ</a>
@@ -32,15 +46,6 @@
           <li class="nav-item">
               <a class="nav-link" href="#">+7 (926) 094-75-77</a>
           </li>
-
-{#        <li class="nav-item dropdown">#}
-{#          <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>#}
-{#          <div class="dropdown-menu" aria-labelledby="dropdown07">#}
-{#            <a class="dropdown-item" href="#">Action</a>#}
-{#            <a class="dropdown-item" href="#">Another action</a>#}
-{#            <a class="dropdown-item" href="#">Something else here</a>#}
-{#          </div>#}
-{#        </li>#}
       </ul>
     </div>
   </div>

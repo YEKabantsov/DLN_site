@@ -25,19 +25,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-4 text-center text-sm-right left-dop-content">
-                    <p class="dop_link_menu first_left"><a href="lekarstvenie-sredstva">Лекарственные средства</a></p>
-                    <p class="dop_link_menu"><a href="medicinskie-izdeliya">Медицинские изделия</a></p>
-                    <p class="dop_link_menu third_left"><a href="disenfeciruyushie-sredstva">Дезинфицирующие средства</a></p>
-                    <p class="dop_link_menu last_left"><a href="sportivnoe-pitanie">Спортивное питание</a></p>
+                    <p class="dop_link_menu first_left"><a href="#">Лекарственные средства</a></p>
+                    <p class="dop_link_menu"><a href="#">Медицинские изделия</a></p>
+                    <p class="dop_link_menu third_left"><a href="#">Дезинфицирующие средства</a></p>
+                    <p class="dop_link_menu last_left"><a href="#">Спортивное питание</a></p>
                 </div>
                 <div class="col-12 col-sm-4 d-flex align-items-center justify-content-center">
                     <img src=" {% static 'img/apple.png' %}" alt="" class="img-fluid">
                 </div>
                 <div class="col-12 col-sm-4 text-sm-left text-center right-dop-content">
-                    <p class="dop_link_menu first_right"><a href="cosmeticheskie-sredstva">Косметические средства</a></p>
-                    <p class="dop_link_menu"><a href="syryo-bad">Сырьё для производства БАД</a></p>
-                    <p class="dop_link_menu third_right"><a href="bad">Биологически активные добавки</a></p>
-                    <p class="dop_link_menu last_right"><a href="pishhevye-produkty">Пищевые продукты</a></p>
+                    <p class="dop_link_menu first_right"><a href="#">Косметические средства</a></p>
+                    <p class="dop_link_menu"><a href="#">Сырьё для производства БАД</a></p>
+                    <p class="dop_link_menu third_right"><a href="#">Биологически активные добавки</a></p>
+                    <p class="dop_link_menu last_right"><a href="#">Пищевые продукты</a></p>
                 </div>
             </div>
         </div>
@@ -59,25 +59,25 @@
                     </div>
                     <div class="grey_block col-12 row px-0">
                         <div class="grey_block__services">
-                            <a href="lekarstvenie-sredstva">Лекарственные средства</a>
+                            <a href="#">Лекарственные средства</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="vnesenie-izmeneniy">Внесение изменений</a>
+                            <a href="#">Внесение изменений</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="sportivnoe-pitanie">Спортивное питание</a>
+                            <a href="#">Спортивное питание</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="cosmeticheskie-sredstva">Косметические средства</a>
+                            <a href="#">Косметические средства</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="medicinskie-izdeliya">Медицинские изделия РФ</a>
+                            <a href="#">Медицинские изделия РФ</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="registratsiya-lekarstvennykh-sredstv-eeu">Медицинские изделия ЕАЭС</a>
+                            <a href="#">Медицинские изделия ЕАЭС</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="disenfeciruyushie-sredstva">Дезинфицирующие средства</a>
+                            <a href="#">Дезинфицирующие средства</a>
                         </div>
                     </div>
                 </div>
@@ -94,10 +94,10 @@
                     </div>
                     <div class="grey_block col-12 row px-0">
                         <div class="grey_block__services d-flex w-100 text-center px-0 py-0">
-                            <a href="litsenzirovanie-medicinskoi-tehniki" class="w-100">Медицинская техника</a>
+                            <a href="#" class="w-100">Медицинская техника</a>
                         </div>
                         <div class="grey_block__services d-flex w-100 text-center px-0 py-0">
-                            <a href="litsenzirovanie-lekarstvennykh-sredstv" class="w-100">Лекарственные средства</a>
+                            <a href="#" class="w-100">Лекарственные средства</a>
                         </div>
                     </div>
                 </div>
@@ -114,22 +114,25 @@
                     </div>
                     <div class="grey_block col-12 row px-0">
                         <div class="grey_block__services">
-                            <a href="deklarirovanie-and-sertifikatsiya">Обязательная и добровольная  сертификация</a>
+                            <a href="#">Обязательная и добровольная  сертификация</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="deklarirovanie-and-sertifikatsiya">Декларирование</a>
+                            <a href="#">Декларирование</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="medicinskie-izdeliya">Медицинские изделия</a>
+                            <a href="#">Медицинские изделия</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="bad">БАД</a>
+                            <a href="#">БАД</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="disenfeciruyushie-sredstva">Дезинфицирующие средства</a>
+                            <a href="#">Медицинские изделия</a>
                         </div>
                         <div class="grey_block__services">
-                            <a href="syryo-bad">Сырье для производства БАД</a>
+                            <a href="#">Дезинфицирующие средства</a>
+                        </div>
+                        <div class="grey_block__services">
+                            <a href="#">Сырье для производства БАД</a>
                         </div>
                     </div>
                 </div>
@@ -146,10 +149,10 @@
                     </div>
                     <div class="grey_block col-12 row px-0">
                         <div class="grey_block__services d-flex w-100 text-center px-0 py-0">
-                            <a href="sertifikatsiya-iso" class="w-100">По требованиям ISO 9001, 13485, 22000</a>
+                            <a href="#" class="w-100">По требованиям ISO 9001, 13485, 22000</a>
                         </div>
                         <div class="grey_block__services d-flex w-100 text-center px-0 py-0">
-                            <a href="sertifikatsiya-eeu" class="w-100">По требованиям ЕАЭС</a>
+                            <a href="#" class="w-100">По требованиям ЕАЭС</a>
                         </div>
                     </div>
                 </div>
@@ -172,36 +175,23 @@
         </div>
     </section>
 
-    <section id="callback_form" class="d-none d-sm-block">
+    <section id="callback_form">
         <div class="container">
             <div class="row">
                 <p class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Напишите нам<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></p>
                 <p class="col-12 text-center small_header">Задайте вопрос или оставьте заявку и наш менеджер свяжется с вами</p>
 
-                <div class="col-12 col-sm-5 px-2 text-right pr-1">
-                    <input type="text" class="input__form" placeholder="Ваше имя"><br>
-                    <input type="text" class="input__form" placeholder="Номер телефона"><br>
-                    <input type="text" class="input__form" placeholder="Ваш e-mail"><br>
-                    <p class="col-12 text-right pr-1 text_agree">Нажимая на кнопку,<br> Вы даёте <a href="#">согласие на
-                        <br> обработку своих персональных данных</a></p>
+                <div class="form-group row">
+                  <label for="example-text-input" class="col-2 col-form-label">Text</label>
+                  <div class="col-10">
+                    <input class="form-control" type="text" value="Artisanal kale" id="example-text-input">
+                  </div>
                 </div>
-                <div class="col-12 col-sm-7 px-2 pl-sm-0">
-                    <textarea name="" id="" cols="30" rows="3" placeholder="Текст заявки или вопроса" class="textarea__form"></textarea><br>
-                    <button class="btn btn__form">Отправить</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="d-block d-sm-none">
-        <div class="container">
-            <div class="row">
-                <p class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Напишите нам<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></p>
-                <p class="col-12 text-center small_header">Задайте вопрос или оставьте заявку и наш менеджер свяжется с вами</p>
-                <div class="col-12 callback-form__mobile">
-                  <input class="form-control" type="text" placeholder="Ваше имя">
-                  <input class="form-control" type="text" placeholder="Номер телефона">
-                  <input class="form-control" type="text" placeholder="Ваш e-mail">
-                  <button class="btn form_btn w-100">Отправить</button>
+                <div class="form-group row">
+                  <label for="example-search-input" class="col-2 col-form-label">Search</label>
+                  <div class="col-10">
+                    <input class="form-control" type="search" value="How do I shoot web" id="example-search-input">
+                  </div>
                 </div>
             </div>
         </div>
