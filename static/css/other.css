@@ -117,7 +117,7 @@
 }
 
 .horizontal-line {
-    height: 5px;
+    height: 4.5px;
     background-color: #be1b20;
     width: 50%;
 }
@@ -142,4 +142,8 @@
 .smk-table {
     width: 100%;
     text-align: center;
+}
+
+.modal-content {
+    padding: 10px 15px 20px 15px!important;
 }

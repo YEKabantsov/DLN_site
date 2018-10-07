@@ -417,6 +417,28 @@ footer p {
     padding-bottom: 0px;
 }
 
+.modal-content {
+    padding: 10px 15px 20px 15px!important;
+}
+
+.modal-content p {
+    line-height: 1;
+    font-size: 19px;
+}
+
+.modal-content input {
+    margin-bottom: 8px;
+}
+
+.modal-content .bnt_send_form{
+    background-color: #be1b20;
+    color: white;
+}
+.modal-content .bnt_send_form:hover {
+    background-color: #D56D71;
+}
+
+
 @media (max-width: 575px) {
     .navbar {
         border-bottom: 1px solid #ededed;
