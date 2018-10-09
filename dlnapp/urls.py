@@ -1,6 +1,10 @@
 from django.conf.urls import url, handler404, handler500
 from . import views
 from django.views.generic.base import RedirectView
+from django import template
+from django.template.defaultfilters import stringfilter
+from django.utils.safestring import mark_safe
+from django.utils.html import urlize as urlize_impl
 
 urlpatterns = [
     # url(r'^deklarirovanie$', views.declarate),
