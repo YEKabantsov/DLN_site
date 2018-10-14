@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import JsonResponse, HttpResponse
+from django.core.mail import send_mail, BadHeaderError
 
 # Create your views here.
 def dln(request):
@@ -114,3 +116,25 @@ def declarateandcertificate(request):
 def documents(request):
     data = {}
     return render(request, 'html/documents.html')
+
+def message(request):
+    answer = dict()
+    # session_key = request.session.session_key
+    print(request.POST.get('phone'))
+    subject = 'Заказ с сайта DLN'
+    name = request.POST.get('name')
+    phone = request.POST.get('phone')
+    mess = "\r\n".join((
+        "Заказ со страницы: %s" % page,
+        "Имя клиента: %s" % name,
+        "Телефон клиента: %s" % phone
+    ))
+    if name and phone:
+        try:
+            send_mail(subject, mess, 'centr-dln@yandex.ru', ['centr-dln@yandex.ru'])
+            print('message successfuly sent')
+        except BadHeaderError:
+            return HttpResponse('Error send mail')
+    else:
+        return HttpResponse('All fields valid?')
+    return JsonResponse(answer)
