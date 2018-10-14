@@ -147,3 +147,38 @@
 .modal-content {
     padding: 10px 15px 20px 15px!important;
 }
+
+.callback_phone {
+    position: fixed;
+    right: 45px;
+    bottom:45px;
+    z-index: 100;
+}
+
+@media (max-width: 575px) {
+    .callback_phone {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+    }
+
+    .reg-scheme-eu {
+        width: 360px;
+        height: 450px;
+        overflow: auto;
+    }
+
+    .img-scheme-eu {
+        height: auto;
+        max-width: 300%;
+    }
+
+    .wraper_scrolling {
+        overflow: auto;
+    }
+
+    .scrolling_div {
+        max-width: 200%;
+        height: auto;
+    }
+}

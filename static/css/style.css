@@ -438,8 +438,21 @@ footer p {
     background-color: #D56D71;
 }
 
+.callback_phone {
+    position: fixed;
+    right: 45px;
+    bottom:45px;
+    z-index: 100;
+}
+
 
 @media (max-width: 575px) {
+    .callback_phone {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+    }
+    
     .navbar {
         border-bottom: 1px solid #ededed;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05) !important;
