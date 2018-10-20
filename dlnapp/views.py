@@ -117,6 +117,10 @@ def documents(request):
     data = {}
     return render(request, 'html/documents.html')
 
+def contact(request):
+    data = {}
+    return render(request, 'html/contact.html')
+
 def message(request):
     answer = dict()
     # session_key = request.session.session_key
@@ -125,9 +129,8 @@ def message(request):
     name = request.POST.get('name')
     phone = request.POST.get('phone')
     mess = "\r\n".join((
-        "Заказ со страницы: %s" % page,
         "Имя клиента: %s" % name,
-        "Телефон клиента: %s" % phone
+        "Телефон или почта: %s" % phone
     ))
     if name and phone:
         try:
