@@ -193,15 +193,16 @@
                 <p class="col-12 text-center small_header">Задайте вопрос или оставьте заявку и наш менеджер свяжется с Вами</p>
 
                 <div class="col-12 col-sm-5 px-2 text-right pr-1">
-                    <input type="text" class="input__form" placeholder="Ваше имя"><br>
-                    <input type="text" class="input__form" placeholder="Номер телефона"><br>
-                    <input type="text" class="input__form" placeholder="Ваш e-mail"><br>
+                    <input type="text" class="input__form" id="big_name" placeholder="Ваше имя*"><br>
+                    <input type="text" class="input__form" id="big_phone" placeholder="Номер телефона*"><br>
+                    <input type="text" class="input__form" id="big_email" placeholder="Ваш e-mail"><br>
+                    {% csrf_token %}
                     <p class="col-12 text-right pr-1 text_agree">Нажимая на кнопку,<br> Вы даете <a href="#">согласие на
                         <br> обработку своих персональных данных</a></p>
                 </div>
                 <div class="col-12 col-sm-7 px-2 pl-sm-0">
-                    <textarea name="" id="" cols="30" rows="3" placeholder="Текст заявки или вопроса" class="textarea__form"></textarea><br>
-                    <button class="btn btn__form">Отправить</button>
+                    <textarea name="" id="big_textarea" cols="30" rows="3" placeholder="Текст заявки или вопроса" class="textarea__form"></textarea><br>
+                    <button class="btn btn__form form_btn" data-url="{% url 'message' %}">Отправить</button>
                 </div>
             </div>
         </div>
@@ -214,14 +215,66 @@
                 <p class="col-12 text-center header"><span class="square_top"><img src="{% static 'img/square_top.svg'%}" alt=""></span>Напишите нам<span class="square_bottom"><img src="{% static 'img/square_bottom.svg'%}" alt=""></span></p>
                 <p class="col-12 text-center small_header">Задайте вопрос или оставьте заявку и наш менеджер свяжется с вами</p>
                 <div class="col-12 callback-form__mobile">
-                  <input class="form-control" type="text" placeholder="Ваше имя">
-                  <input class="form-control" type="text" placeholder="Номер телефона">
-                  <input class="form-control" type="text" placeholder="Ваш e-mail">
-                  <button class="btn form_btn w-100">Отправить</button>
+                  <input class="form-control" id="client_name" type="text" placeholder="Ваше имя">
+                  <input class="form-control" id="client_phone" type="text" placeholder="Номер телефона">
+                  <input class="form-control" id="client_email" type="text" placeholder="Ваш e-mail">
+                  {% csrf_token %}
+                  <button class="btn form_btn w-100" data-url="{% url 'message' %}">Отправить</button>
                 </div>
             </div>
         </div>
     </section>
+    <script>
+    $(function() {
+    
+        function sendMessage (name, phone, where, csrf_token){
+            let data = {
+                name: name,
+                phone: phone,
+                csrfmiddlewaretoken: csrf_token
+            };
+            console.log(data);
+            $.ajax({
+                url: where,
+                data: data,
+                dataType: 'json',
+                method: 'POST'
+            }).done(function(data, data2) {
+                $('#callbackModalBigForm').modal('show');
+                if (data2 == 'success') {
+                    $('.error_message').addClass('d-none');
+                    $('.success_message').removeClass('d-none');
+                } else {
+                    $('.success_message').addClass('d-none');
+                    $('.error_message').removeClass('d-none');
+                }
+            });
+        }
+
+        $('#callbackModalBigForm').on('hidden.bs.modal', function() {
+            $('#big_name').val('');
+            $('#big_phone').val('');
+            $('#big_email').val('');
+            $('#big_textarea').val('');
+        });
+    
+        $('.form_btn').on('click', function () {
+            let name = $('#big_name').val();
+            let phone = $('#big_phone').val();
+            let email = $('#big_email').val();
+            let where = $(this).data('url');
+            let csrf_token = $('[name=csrfmiddlewaretoken]').val();
+    
+            (name == '') ? $('#big_name').addClass('is-invalid') : $('#big_name').removeClass('is-invalid');
+            (phone == '') ? $('#big_phone').addClass('is-invalid') : $('#big_phone').removeClass('is-invalid');
+            (email == '') ? $('#big_email').addClass('is-invalid') : $('#big_phone').removeClass('is-invalid');
+            if ((name != '') && (phone != '')) {
+                // $('#callbackModalBigForm').modal('show');
+                sendMessage(name, phone, where, csrf_token);
+            }
+        });
+    });
+    </script>
     {% include 'map.html' %}
 </body>
 {% include 'footer.html' %}
