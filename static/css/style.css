@@ -52,7 +52,7 @@
 
 .my_nav li a{
     font-family: Calibri;
-    font-size: 18px;
+    font-size: 16px;
     color: #BE1B20;
     font-weight: 600;
     line-height: 1;
@@ -445,6 +445,13 @@ footer p {
     z-index: 100;
 }
 
+.arrow-shadow {
+    -webkit-box-shadow: 0px 10px 26px -7px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 26px -7px rgba(0,0,0,0.25);
+    box-shadow: 0px 10px 26px -7px rgba(0,0,0,0.25);
+    border-radius: 50%;
+    cursor: pointer;
+}
 
 @media (max-width: 575px) {
     .callback_phone {

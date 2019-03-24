@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^deklarirovanie-and-sertifikatsiya$', views.declarateandcertificate),
     url(r'^dokumenti$', views.documents),
     url(r'^contact$', views.contact),
+    url(r'^reviews$', views.reviews),
     url(r'^message$', views.message, name='message'),
 
     url(r'^$', views.dln),

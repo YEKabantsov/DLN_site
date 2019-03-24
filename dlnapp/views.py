@@ -121,6 +121,70 @@ def contact(request):
     data = {}
     return render(request, 'html/contact.html')
 
+def reviews(request):
+    data = {
+        "reviewsList": [
+            'img/reviews/1.png',
+            'img/reviews/2.png',
+            'img/reviews/3.png',
+            'img/reviews/4.jpg',
+            'img/reviews/5.jpg',
+            'img/reviews/6.jpg',
+            'img/reviews/7.jpg',
+            'img/reviews/8.png',
+            'img/reviews/9.png',
+            'img/reviews/10.png',
+            'img/reviews/11.png',
+            'img/reviews/12.png',
+            'img/reviews/13.png',
+            'img/reviews/14.png',
+            'img/reviews/15.png',
+            'img/reviews/16.png'
+        ],
+        "logos": [
+            'img/logo/1.jpg',
+            'img/logo/2.png',
+            'img/logo/3.jpg',
+            'img/logo/4.jpg',
+            'img/logo/5.png',
+            'img/logo/6.png',
+            'img/logo/7.jpg',
+            'img/logo/8.jpg',
+            'img/logo/9.jpg',
+            'img/logo/10.jpg',
+            'img/logo/11.jpg',
+            'img/logo/12.jpg',
+            'img/logo/13.jpg',
+            'img/logo/14.jpg',
+            'img/logo/15.png',
+            'img/logo/16.jpg',
+            'img/logo/17.jpg',
+            'img/logo/18.jpg',
+            'img/logo/19.jpg',
+            'img/logo/20.png',
+            'img/logo/21.png',
+            'img/logo/22.png',
+            'img/logo/23.png',
+            'img/logo/24.png',
+            'img/logo/25.png',
+            'img/logo/26.png',
+            'img/logo/27.png',
+            'img/logo/28.jpg',
+            'img/logo/29.jpg',
+            'img/logo/30.jpg',
+            'img/logo/31.jpg',
+            'img/logo/32.jpg',
+            'img/logo/33.png',
+            'img/logo/34.jpg',
+            'img/logo/35.jpg',
+            'img/logo/36.jpg',
+            'img/logo/37.jpg',
+            'img/logo/38.png',
+            'img/logo/39.jpg',
+        ]
+    }
+    return render(request, 'html/reviews.html', context=data)
+
 def message(request):
     answer = dict()
     # session_key = request.session.session_key

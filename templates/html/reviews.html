@@ -1,0 +1,99 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="{{ description }}">
+    {% include 'styles.html' %}
+    <!--<link rel="stylesheet" href="{% static 'css/index.css' %}">-->
+    <link rel="stylesheet" href="{% static 'css/other.css' %}">
+    <link rel="stylesheet" href="{% static 'dist/assets/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'dist/assets/owl.theme.default.min.css' %}">
+    <link rel="stylesheet" href="{% static 'lightbox/css/lightbox.css' %}">
+    {% include 'scripts.html' %}
+    <script src="{% static 'dist/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'lightbox/js/lightbox.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+            let owl = $(".owl-carousel");
+            owl.owlCarousel();
+            $(".next").click(function(){
+                owl.trigger("next.owl.carousel");
+            });
+            $(".prev").click(function(){
+                owl.trigger("prev.owl.carousel");
+            });
+        }); 
+    </script>
+</head>
+<body>
+{% include 'menu.html' %}
+<div class="header_page mb-5">
+    <h1 class="col-12 text-center header">
+        <span class="square_top">
+            <img src="{% static 'img/square_top.svg'%}" alt="">
+        </span>
+        Отзывы
+        <span class="square_bottom">
+            <img src="{% static 'img/square_bottom.svg'%}" alt="">
+        </span>
+    </h1>
+
+    <div class="container">
+        <div class="row">
+            <nav aria-label="breadcrumb mb-0">
+                <ol class="breadcrumb mb-0 py-0">
+                    <li class="breadcrumb-item"><a href="/">Главная</a></li>
+                    <li class="breadcrumb-item"><a href="#">Отзывы</a></li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row align-items-center ">
+        <div class="col-1">
+            <img src="{% static 'img/left-arrow.svg' %}" alt="" class="arrow-shadow prev owl-prev">
+        </div>
+        <div class="col-10 owl-carousel">
+            {% for img in reviewsList %}
+                <div class="col-12 my-2 text-center">
+                    <a href="{% static '' %}{{ img }}" data-lightbox="{{ img }}">
+                        <img src="{% static '' %}{{ img }}" alt="" class="img-fluid">
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+        <div class="col-1">
+            <img src="{% static 'img/right-arrow.svg' %}" alt="" class="arrow-shadow next owl-next">
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row align-items-center">
+        <p class="col-12 text-center header">
+            <span class="square_top">
+                <img src="{% static 'img/square_top.svg'%}" alt="">
+            </span>Наши клиенты<span class="square_bottom">
+                <img src="{% static 'img/square_bottom.svg'%}" alt="">
+            </span>
+        </p>
+        {% for img in logos %}
+            <div class="col-6 col-md-2 my-2 text-center">
+                <img src="{% static '' %}{{ img }}" alt="" class="img-fluid">
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+{% include 'map.html' %}
+</body>
+{% include 'footer.html' %}
+</html>
