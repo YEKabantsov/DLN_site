@@ -453,6 +453,19 @@ footer p {
     cursor: pointer;
 }
 
+.social-link img{
+    width: 30px;
+    height: 30px;
+}
+
+.social-link:hover {
+    text-decoration: none;
+}
+
+.social-link img:hover {
+    color: #BA3365;
+}
+
 @media (max-width: 575px) {
     .callback_phone {
         position: fixed;
