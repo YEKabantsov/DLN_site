@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.conf.urls import url, include
 
+admin.autodiscover()
+
 urlpatterns = [
     url(r'^', include('dlnapp.urls')),
     url('admin/', admin.site.urls),

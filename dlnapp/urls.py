@@ -5,6 +5,8 @@ from django import template
 from django.template.defaultfilters import stringfilter
 from django.utils.safestring import mark_safe
 from django.utils.html import urlize as urlize_impl
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     # url(r'^deklarirovanie$', views.declarate),
@@ -43,3 +45,5 @@ urlpatterns = [
 
     url(r'^$', views.dln),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
